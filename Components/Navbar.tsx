@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="text-foreground bg-white pt-5 pb-5 mb-5 shadow-sm">
+      <nav className="text-foreground bg-white pt-5 pb-5 shadow-sm">
         <ul className="flex flex-row justify-around h-8 items-center text-lg ml-auto mr-auto">
           <li className="mr-auto">
             <Link href={"/"}>
@@ -42,10 +42,17 @@ export default function Navbar() {
                 alt="exotic cars logo"
                 width={250}
                 height={100}
+                className="w-3xs"
               />
             </Link>
           </li>
-
+          {/* 
+           
+                height={150}
+                className=" w-auto"
+              />
+            </Link>
+          </li> */}
           {navItems.map((item) => (
             <li
               key={item.path}
@@ -115,7 +122,7 @@ export default function Navbar() {
 
           <li className="ml-auto mr-auto">
             <Link href={"#"} className="hover:text-red-700 transition-colors">
-              Log In / Sign Up
+              Sign In / Sign Up
             </Link>
           </li>
         </ul>
