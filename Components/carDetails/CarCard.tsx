@@ -4,7 +4,7 @@ import { Car } from "@/lib/types";
 import CarMileage from "./CarMileage";
 import CarCondition from "./CarCondition";
 import FuelType from "./FuelType";
-import { carImages } from "@/lib/car-image";
+import { carInfo } from "@/lib/car-info";
 
 export default function CarCard({
   car,
@@ -13,12 +13,15 @@ export default function CarCard({
   car: Car;
   location: Car["location"];
 }) {
-  const carImage = carImages.find((image) => image.name === car.manufacturer);
+  const carImage = carInfo.find((image) => image.name === car.manufacturer);
 
   return (
-    <div className="group block overflow-hidden rounded-2xl border border-gray-200 transition-shadow hover:shadow-lg">
-      <Link href={`/shop/${car.manufacturer}`}>
-        <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+    <div className="group block overflow-hidden rounded-2xl bg-white ring-1 ring-foreground/10 transition-shadow hover:shadow-xl">
+      {/* Was linking to /shop/${car.manufacturer}, which is the same value
+          for every card right now — /shop/${car.id} is the unique key and
+          is what the (not-yet-built) /shop/[id] detail page should read. */}
+      <Link href={`/shop/${car.manufacturer}/${car.id}`}>
+        <div className="relative h-48 w-full overflow-hidden bg-foreground/5">
           <Image
             src={carImage?.Img || "/car-placeholder.jpg"}
             alt={`${car.color} ${car.year} ${car.manufacturer} ${car.model}`}
@@ -34,16 +37,16 @@ export default function CarCard({
 
         <div className="p-4">
           <div className="flex items-start justify-between">
-            <h3 className="text-sm font-semibold">
+            <h3 className="text-sm font-semibold text-foreground">
               {car.year} {car.manufacturer} {car.model}
             </h3>
 
             <p className="whitespace-nowrap text-sm font-semibold text-primary">
-              {/* ${`${car.price * 100}`} */} $ xxxxx
+              ${Math.round(car.price * 100)}
             </p>
           </div>
 
-          <p className="mt-1 text-xs text-gray-500">
+          <p className="mt-1 text-xs text-foreground/60">
             <CarMileage mileage={carImage?.mileage} />
             <FuelType
               fuel={carImage?.fuel}
@@ -51,20 +54,20 @@ export default function CarCard({
             />
           </p>
 
-          <p className="mt-2 text-xs text-gray-400">
+          <p className="mt-2 text-xs text-foreground/40">
             {typeof location === "string" ? location : location.city}
           </p>
         </div>
       </Link>
 
-      <div className="border-t border-gray-100 px-4 pb-4 pt-3">
+      <div className="border-t border-foreground/10 px-4 pb-4 pt-3">
         <div className="flex items-center justify-between gap-3">
           <div>
-            <p className="text-xs font-semibold text-gray-700">
-              Unlock full pricing
+            <p className="text-xs font-semibold text-foreground/80">
+              Unlock exclusive pricing
             </p>
-            <p className="mt-0.5 text-[11px] text-gray-400">
-              Sign in to view the price
+            <p className="mt-0.5 text-[10px] text-foreground/40">
+              Sign in to view your discounted price
             </p>
           </div>
 

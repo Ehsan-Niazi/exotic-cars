@@ -25,7 +25,7 @@ function generateTransmission() {
   return transmission[Math.floor(Math.random() * transmission.length)];
 }
 
-export const carImages: {
+export const carInfo: {
   Img: string;
   id: number;
   name: string;
@@ -33,6 +33,7 @@ export const carImages: {
   condition: string;
   fuel: string;
   transmission: string;
+  type: string;
 }[] = [
   {
     id: 1,
@@ -42,6 +43,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Hatchback",
   },
   {
     id: 2,
@@ -51,6 +53,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 3,
@@ -60,6 +63,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 4,
@@ -69,6 +73,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 5,
@@ -78,6 +83,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Hatchback",
   },
   {
     id: 6,
@@ -87,6 +93,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 7,
@@ -96,6 +103,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 8,
@@ -105,6 +113,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Sedan",
   },
   {
     id: 9,
@@ -114,6 +123,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 10,
@@ -123,6 +133,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Convertible",
   },
   {
     id: 11,
@@ -132,6 +143,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Sedan",
   },
   {
     id: 12,
@@ -141,6 +153,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Sedan",
   },
   {
     id: 13,
@@ -150,6 +163,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 14,
@@ -159,6 +173,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 15,
@@ -168,6 +183,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Hatchback",
   },
   {
     id: 16,
@@ -177,6 +193,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Sedan",
   },
   {
     id: 17,
@@ -186,6 +203,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 18,
@@ -195,6 +213,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 19,
@@ -204,6 +223,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 20,
@@ -213,6 +233,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 21,
@@ -222,6 +243,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 22,
@@ -231,6 +253,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Sedan",
   },
   {
     id: 23,
@@ -240,6 +263,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 24,
@@ -249,6 +273,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 25,
@@ -258,6 +283,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 26,
@@ -267,6 +293,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Truck",
   },
   {
     id: 27,
@@ -276,6 +303,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 28,
@@ -285,6 +313,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
   {
     id: 29,
@@ -294,6 +323,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 30,
@@ -303,6 +333,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Hatchback",
   },
   {
     id: 31,
@@ -312,6 +343,7 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "Coupe",
   },
   {
     id: 32,
@@ -321,5 +353,6 @@ export const carImages: {
     condition: generateCondition(),
     fuel: generateFuel(),
     transmission: generateTransmission(),
+    type: "SUV",
   },
 ];
