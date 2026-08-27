@@ -21,7 +21,7 @@ export const mockCars: Car[] = [
     location: "Miami, FL",
     featured: true,
     listedAt: "2026-08-10",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Porsche",
     color: "green",
   },
   {
@@ -40,7 +40,7 @@ export const mockCars: Car[] = [
     location: "Dallas, TX",
     featured: true,
     listedAt: "2026-08-05",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Land Rover",
     color: "blue",
   },
   {
@@ -59,7 +59,7 @@ export const mockCars: Car[] = [
     location: "Los Angeles, CA",
     featured: true,
     listedAt: "2026-08-14",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Tesla",
     color: "olive green",
   },
   {
@@ -78,7 +78,7 @@ export const mockCars: Car[] = [
     location: "New York, NY",
     featured: true,
     listedAt: "2026-08-02",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Mercedes Benz",
     color: "ocean blue",
   },
   {
@@ -96,7 +96,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop",
     location: "Chicago, IL",
     listedAt: "2026-07-28",
-    manufacturer: "UNKNOWN",
+    manufacturer: "BMW",
     color: "gray",
   },
   {
@@ -114,7 +114,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop",
     location: "Austin, TX",
     listedAt: "2026-08-15",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Toyota",
     color: "oyster white",
   },
   {
@@ -132,7 +132,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1583267746897-2cf415887172?q=80&w=1200&auto=format&fit=crop",
     location: "Denver, CO",
     listedAt: "2026-07-20",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Ford",
     color: "red",
   },
   {
@@ -150,7 +150,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1200&auto=format&fit=crop",
     location: "Seattle, WA",
     listedAt: "2026-07-12",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Mazda",
     color: "green",
   },
   {
@@ -168,7 +168,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=1200&auto=format&fit=crop",
     location: "Phoenix, AZ",
     listedAt: "2026-08-08",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Audi",
     color: "black",
   },
   {
@@ -186,7 +186,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1633867237261-8e6b3e7f6f6d?q=80&w=1200&auto=format&fit=crop",
     location: "Portland, OR",
     listedAt: "2026-08-13",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Rivian",
     color: "green",
   },
   {
@@ -204,7 +204,7 @@ export const mockCars: Car[] = [
       "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?q=80&w=1200&auto=format&fit=crop",
     location: "Boston, MA",
     listedAt: "2026-08-01",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Honda",
     color: "orange",
   },
   {
@@ -223,7 +223,7 @@ export const mockCars: Car[] = [
     location: "Las Vegas, NV",
     featured: true,
     listedAt: "2026-08-11",
-    manufacturer: "UNKNOWN",
+    manufacturer: "Lamborghini",
     color: "orange",
   },
 ];

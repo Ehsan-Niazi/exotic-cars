@@ -15,9 +15,9 @@ export default function Navbar() {
       path: "/shop",
       label: "Shop",
       dropdown: [
-        { path: "/shop/new-cars", label: "new cars" },
-        { path: "/shop/used-cars", label: "used cars" },
-        { path: "/shop/accessories", label: "Accessories" },
+        { path: "/shop?condition=New", label: "new cars" },
+        { path: "/shop?condition=Used", label: "used cars" },
+        { path: "/shop?condition=Certified", label: "certified cars" },
       ],
     },
     { path: "/articles", label: "Articles" },
@@ -43,6 +43,7 @@ export default function Navbar() {
                 width={250}
                 height={100}
                 className="w-3xs"
+                loading="eager"
               />
             </Link>
           </li>
