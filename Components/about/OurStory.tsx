@@ -6,7 +6,7 @@ export default function OurStory() {
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <div className="relative h-80 w-full overflow-hidden rounded-2xl bg-foreground/5 md:h-96">
           <Image
-            src="/about-images/inspect.jpg"
+            src="/about-images/inspecting.jpg"
             alt="A car being inspected in the Exotic Cars Hub showroom"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

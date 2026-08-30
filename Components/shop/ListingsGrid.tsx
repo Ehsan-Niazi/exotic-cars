@@ -5,9 +5,11 @@ import { Car } from "@/lib/types";
 export default function ListingsGrid({
   cars,
   location,
+  isMember = false,
 }: {
   cars: Car[];
   location: Car["location"];
+  isMember?: boolean;
 }) {
   if (!cars.length) {
     return (
@@ -30,6 +32,7 @@ export default function ListingsGrid({
           key={`${car.manufacturer}${car.id}`}
           car={car}
           location={location}
+          isMember={isMember}
         />
       ))}
     </div>

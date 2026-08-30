@@ -6,6 +6,7 @@ import ListingsGrid from "@/components/shop/ListingsGrid";
 import Pagination from "@/components/shop/Pagination";
 import { getCars, getLocation } from "@/lib/cars";
 import { filterAndSortCars, ShopSearchParams } from "@/lib/filter-cars";
+import { auth } from "@/lib/auth";
 
 export default async function ShopPage({
   searchParams,
@@ -14,10 +15,11 @@ export default async function ShopPage({
 }) {
   const params = await searchParams;
 
-  // Same two calls FeaturedListings makes on the home page, so a car's
-  // photo/condition/location treatment looks identical whether you're
-  // looking at "Featured" or the full shop grid.
-  const [cars, location] = await Promise.all([getCars(), getLocation()]);
+  const [cars, location, session] = await Promise.all([
+    getCars(),
+    getLocation(),
+    auth(),
+  ]);
 
   const { results, total, page, totalPages } = filterAndSortCars(cars, params);
   const availableMakes = Array.from(
@@ -42,7 +44,11 @@ export default async function ShopPage({
               <SortDropdown />
             </div>
 
-            <ListingsGrid cars={results} location={location} />
+            <ListingsGrid
+              cars={results}
+              location={location}
+              isMember={!!session}
+            />
 
             <Pagination
               page={page}
