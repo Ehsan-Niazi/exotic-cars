@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import AuthButton from "./auth/AuthButton";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -47,13 +48,6 @@ export default function Navbar() {
               />
             </Link>
           </li>
-          {/* 
-           
-                height={150}
-                className=" w-auto"
-              />
-            </Link>
-          </li> */}
           {navItems.map((item) => (
             <li
               key={item.path}
@@ -81,7 +75,6 @@ export default function Navbar() {
               >
                 {item.label}
 
-                {/* Arrow for dropdown items */}
                 {item.dropdown && (
                   <svg
                     className={`w-4 h-4 transition-transform duration-200 ${
@@ -101,7 +94,6 @@ export default function Navbar() {
                 )}
               </Link>
 
-              {/* Dropdown Menu */}
               {item.dropdown && isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-md min-w-50 py-2 z-50">
                   {item.dropdown.map((dropdownItem) => (
@@ -122,9 +114,7 @@ export default function Navbar() {
           ))}
 
           <li className="ml-auto mr-auto">
-            <Link href={"#"} className="hover:text-red-700 transition-colors">
-              Sign In / Sign Up
-            </Link>
+            <AuthButton />
           </li>
         </ul>
       </nav>

@@ -45,8 +45,8 @@ export default function ActiveFilterChips() {
     chips.push({
       key: "price",
       value: "price",
-      label: `$${Number(min).toLocaleString()} – ${
-        max === "any" ? "any" : `$${Number(max).toLocaleString()}`
+      label: `$${Number(min).toString()} – ${
+        max === "any" ? "any" : `$${Number(max).toString()}`
       }`,
     });
   }

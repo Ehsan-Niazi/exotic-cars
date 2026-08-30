@@ -3,19 +3,24 @@ import { ArrowRight } from "lucide-react";
 import CarCard from "../carDetails/CarCard";
 import { Car } from "@/lib/types";
 import { getCars, getLocation } from "@/lib/cars";
+import { auth } from "@/lib/auth";
 
 async function getCarLocation(): Promise<Car["location"]> {
   const location: Car["location"] = await getLocation();
   return location;
 }
+
 async function getFeaturedCars(): Promise<Car[]> {
   const cars = await getCars();
   return cars.filter((car) => car).slice(0, 4);
 }
 
 export default async function FeaturedListings() {
-  const cars = await getFeaturedCars();
-  const location = await getCarLocation();
+  const [cars, location, session] = await Promise.all([
+    getFeaturedCars(),
+    getCarLocation(),
+    auth(),
+  ]);
 
   return (
     <section className="bg-gray-50 py-20">
@@ -43,6 +48,7 @@ export default async function FeaturedListings() {
               key={`${car.model}${car.id}`}
               car={car}
               location={location}
+              isMember={!!session}
             />
           ))}
         </div>
