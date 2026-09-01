@@ -12,24 +12,22 @@ const navigation = [
     title: "Explore",
     links: [
       { label: "Browse Cars", href: "/shop" },
-      { label: "New Arrivals", href: "/shop?sort=newest" },
-      { label: "Luxury Cars", href: "/shop?category=luxury" },
-      { label: "Electric Cars", href: "/shop?fuel=electric" },
+      { label: "Brand New Cars", href: "/shop?condition=New" },
+      { label: "SUVs", href: "/shop?bodyType=SUV" },
+      { label: "Electric Cars", href: "/shop?fuel=Electric" },
     ],
   },
   {
     title: "Discover",
     links: [
-      { label: "Compare Cars", href: "/compare" },
-      { label: "Saved Cars", href: "/saved" },
-      { label: "Buying Guide", href: "/guides" },
+      { label: "Buying Guide", href: "/articles?category=Buying%20Guides" },
     ],
   },
   {
     title: "Company",
     links: [
       { label: "About Us", href: "/about-us" },
-      { label: "Contact", href: "/contact" },
+      { label: "Contact", href: "/about-us#visit" },
     ],
   },
   {
@@ -196,12 +194,10 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-5 py-7 sm:flex-row sm:items-center sm:justify-between">
-          {/* Copyright */}
           <p className="text-[11px]">
             © {new Date().getFullYear()} Exotic Cars Hub. All rights reserved.
           </p>
 
-          {/* Legal */}
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <Link
               href="/privacy"

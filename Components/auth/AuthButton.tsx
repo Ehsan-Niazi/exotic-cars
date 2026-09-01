@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useSession, signOut } from "next-auth/react";
-import { ChevronDown, LogOut, Heart } from "lucide-react";
+import { ChevronDown, LogOut } from "lucide-react";
 import { useAuthModal } from "./AuthModalProvider";
 import { MEMBER_DISCOUNT_PERCENT } from "@/lib/pricing";
 
@@ -57,14 +57,6 @@ export default function AuthButton() {
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
             {MEMBER_DISCOUNT_PERCENT}% member pricing active
           </div>
-
-          <a
-            href="/saved"
-            className="flex items-center gap-2 px-4 py-2 text-sm text-foreground/80 transition-colors hover:bg-red-50 hover:text-primary"
-          >
-            <Heart className="h-4 w-4" /> Saved Cars
-          </a>
-
           <button
             onClick={() => signOut()}
             className="flex w-full items-center gap-2 px-4 py-2 text-left text-sm text-foreground/80 transition-colors hover:bg-red-50 hover:text-primary"
