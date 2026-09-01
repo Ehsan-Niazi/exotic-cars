@@ -76,7 +76,7 @@ export default function SearchWidget() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 gap-3 rounded-2xl bg-white p-4 text-foreground shadow-xl ring-1 ring-black/5 sm:grid-cols-[1fr_1fr_1fr_auto]">
+    <div className="grid grid-cols-1 gap-3 rounded-2xl bg-white p-4 text-foreground shadow-xl ring-1 ring-black/5 sm:grid-cols-[1fr_1fr_1fr_auto] lg:absolute lg:left-0 lg:right-0">
       <Field
         label="Make"
         value={make}

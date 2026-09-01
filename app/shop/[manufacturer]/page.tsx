@@ -30,7 +30,7 @@ export default async function BrandPage({
   return (
     <main className="bg-background">
       <div className="bg-neutral-950 text-white">
-        <div className="mx-auto max-w-4xl px-8 py-14">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-9 sm:py-12 lg:py-14">
           <p className="text-xs text-neutral-400">
             <Link href="/" className="hover:text-white">
               Home
@@ -47,7 +47,7 @@ export default async function BrandPage({
               {history.founded}
             </span>
 
-            <h1 className="mt-5 text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
+            <h1 className="mt-5 text-3xl font-semibold tracking-[-0.02em] sm:text-4xl lg:text-5xl">
               {manufacturer}
             </h1>
 
@@ -58,21 +58,21 @@ export default async function BrandPage({
         </div>
       </div>
 
-      <div className="mx-auto max-w-3xl px-8 py-10">
-        <div className="flex justify-center items-center relative h-70 overflow-hidden rounded-2xl bg-foreground/5 sm:h-105 lg:h-130">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-10">
+        <div className="relative flex h-64 items-center justify-center overflow-hidden rounded-2xl bg-foreground/5 sm:h-64 lg:h-64">
           <Image
             src={history.image}
             alt={`${manufacturer} vehicle`}
             width={400}
             height={200}
             priority
-            className="object-cover"
+            className="object-cover w-[50%]"
             sizes="(max-width: 1024px) 100vw, 1152px"
           />
         </div>
       </div>
 
-      <div className="mx-auto max-w-3xl px-8 pb-16">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pb-10 sm:pb-14 lg:pb-16">
         <div className="space-y-10">
           {history.sections.map((section, index) => (
             <section key={index}>

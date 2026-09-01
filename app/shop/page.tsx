@@ -30,7 +30,7 @@ export default async function ShopPage({
     <main className="bg-background">
       <ShopHeader resultCount={total} />
 
-      <div className="mx-auto max-w-7xl px-8 py-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col gap-10 lg:flex-row">
           <FiltersSidebar availableMakes={availableMakes} />
 

@@ -7,8 +7,8 @@ const STATS = [
 
 export default function StatsStrip() {
   return (
-    <section className="bg-neutral-950 py-14 text-white">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-8 sm:grid-cols-4">
+    <section className="bg-neutral-950 py-10 sm:py-12 lg:py-14 text-white">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 sm:grid-cols-4">
         {STATS.map((stat) => (
           <div key={stat.label} className="text-center">
             <p className="text-2xl font-semibold tracking-[-0.02em]">

@@ -38,7 +38,7 @@ const CATEGORIES: { type: BodyType; icon: string; hoverIcon: string }[] = [
 
 export default function CategoryGrid() {
   return (
-    <section className="mx-auto max-w-7xl px-8 py-20">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <h2 className="text-2xl font-semibold tracking-[-0.02em]">
         Browse by body type
       </h2>
@@ -48,9 +48,9 @@ export default function CategoryGrid() {
           <Link
             key={type}
             href={`/shop?bodyType=${type}`}
-            className="group flex flex-col items-center gap-3 rounded-2xl border border-gray-200 py-8 transition-colors hover:border-red-700 hover:bg-red-50"
+            className="group flex flex-col items-center gap-3 rounded-2xl border border-gray-200 px-2 py-6 transition-colors sm:py-8 hover:border-red-700 hover:bg-red-50"
           >
-            <div className="relative h-16 w-28">
+            <div className="relative h-14 w-24 sm:h-16 sm:w-28">
               <Image
                 src={icon}
                 alt={type}

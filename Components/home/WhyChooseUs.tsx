@@ -29,7 +29,7 @@ const VALUES = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="mx-auto max-w-7xl px-8 py-20">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <h2 className="text-2xl font-semibold tracking-[-0.02em]">
         Why buyers choose Exotic Cars Hub
       </h2>

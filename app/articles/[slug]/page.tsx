@@ -27,7 +27,7 @@ export default async function ArticlePage({
       <article>
         {/* Article header */}
         <div className="bg-neutral-950 text-white">
-          <div className="mx-auto max-w-4xl px-8 py-14">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-9 sm:py-12 lg:py-14">
             <p className="text-xs text-neutral-400">
               <Link href="/" className="hover:text-white">
                 Home
@@ -44,7 +44,7 @@ export default async function ArticlePage({
                 {article.category}
               </span>
 
-              <h1 className="mt-5 text-3xl font-semibold leading-tight tracking-[-0.02em] sm:text-5xl">
+              <h1 className="mt-5 text-3xl font-semibold leading-tight tracking-[-0.02em] sm:text-4xl lg:text-5xl">
                 {article.title}
               </h1>
 
@@ -61,8 +61,8 @@ export default async function ArticlePage({
         </div>
 
         {/* Hero image */}
-        <div className="mx-auto max-w-6xl px-8 py-10">
-          <div className="relative h-70 overflow-hidden rounded-2xl bg-foreground/5 sm:h-105 lg:h-130">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10">
+          <div className="relative h-56 overflow-hidden rounded-2xl bg-foreground/5 sm:h-96 lg:h-130">
             <Image
               src={article.image}
               alt={article.title}
@@ -75,7 +75,7 @@ export default async function ArticlePage({
         </div>
 
         {/* Article body */}
-        <div className="mx-auto max-w-3xl px-8 pb-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pb-10 sm:pb-14 lg:pb-16">
           <div className="space-y-10">
             {article.sections.map((section, index) => (
               <section key={index}>

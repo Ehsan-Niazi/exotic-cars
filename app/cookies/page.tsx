@@ -5,7 +5,7 @@ export default function CookiesPage() {
   return (
     <main className="bg-background">
       <LegalHeader title="Cookies Policy" updated="August 30, 2026" />
-      <div className="mx-auto max-w-3xl space-y-10 px-8 py-14">
+      <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6 lg:px-8 py-9 sm:py-12 lg:py-14">
         <LegalSection
           heading="What are cookies"
           paragraphs={[

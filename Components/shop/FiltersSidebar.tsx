@@ -40,7 +40,7 @@ export default function FiltersSidebar({
     searchParams.get(key)?.split(",").includes(value) ?? false;
 
   return (
-    <aside className="w-full shrink-0 h-full rounded-2xl bg-white p-5 ring-1 ring-foreground/10 lg:w-64">
+    <aside className="w-full shrink-0 rounded-2xl bg-white p-5 ring-1 ring-foreground/10 lg:w-64 lg:self-start">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-semibold text-foreground">Filters</h2>
 

@@ -657,7 +657,7 @@ const brandHistories: Record<string, BrandHistory> = {
     manufacturer: "Smart",
     founded: "1994, Böblingen, Germany",
     tagline: "Small footprint, big personality.",
-    image: "/history-img/Smart.svg",
+    image: "/history-img/Smart.png",
     sections: [
       {
         heading: "Rethinking the City Car",

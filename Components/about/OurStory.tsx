@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="mx-auto max-w-7xl px-8 py-20">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <div className="relative h-80 w-full overflow-hidden rounded-2xl bg-foreground/5 md:h-96">
           <Image

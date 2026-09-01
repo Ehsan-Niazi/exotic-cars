@@ -21,11 +21,11 @@ export default function FeaturedArticle({ article }: { article: Article }) {
         />
       </div>
 
-      <div className="flex flex-col justify-center p-8">
+      <div className="flex flex-col justify-center p-5 sm:p-8">
         <span className="w-fit rounded-full bg-secondary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-secondary">
           {article.category}
         </span>
-        <h2 className="mt-4 text-2xl font-semibold leading-snug tracking-[-0.01em] text-foreground">
+        <h2 className="mt-4 text-xl font-semibold sm:text-2xl leading-snug tracking-[-0.01em] text-foreground">
           {article.title}
         </h2>
         <p className="mt-3 text-sm leading-6 text-foreground/60">

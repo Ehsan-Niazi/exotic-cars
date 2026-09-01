@@ -11,8 +11,8 @@ export default function LocationSection() {
   const mapUrl = `https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}#map=15/${latitude}/${longitude}`;
 
   return (
-    <section id="visit" className="bg-background py-20">
-      <div className="mx-auto max-w-7xl px-8">
+    <section id="visit" className="bg-background py-12 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
           Visit Us
         </p>
@@ -22,7 +22,7 @@ export default function LocationSection() {
         </h2>
 
         <div className="relative mt-10">
-          <div className="relative h-105 w-full overflow-hidden rounded-2xl bg-foreground/5 ring-1 ring-foreground/10">
+          <div className="relative h-80 w-full sm:h-96 lg:h-105 overflow-hidden rounded-2xl bg-foreground/5 ring-1 ring-foreground/10">
             <iframe
               title="Exotic Cars Hub showroom location"
               src={`https://www.openstreetmap.org/export/embed.html?bbox=${longitude - 0.025},${latitude - 0.015},${longitude + 0.025},${latitude + 0.015}&layer=mapnik&marker=${latitude},${longitude}`}
@@ -31,7 +31,7 @@ export default function LocationSection() {
             />
           </div>
 
-          <div className="relative mx-4 -mt-16 rounded-2xl bg-white p-6 shadow-xl ring-1 ring-foreground/10 sm:absolute sm:bottom-6 sm:left-6 sm:mx-0 sm:mt-0 sm:w-80">
+          <div className="relative mx-4 -mt-16 rounded-2xl bg-white p-6 shadow-xl ring-1 ring-foreground/10 sm:absolute sm:bottom-6 sm:left-6 sm:mx-0 sm:mt-0 w-auto sm:w-80">
             <div className="flex items-start gap-3">
               <div>
                 <p className="text-sm font-semibold text-foreground">

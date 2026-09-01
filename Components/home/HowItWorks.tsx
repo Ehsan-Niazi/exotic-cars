@@ -21,8 +21,8 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-neutral-950 py-20 text-white">
-      <div className="mx-auto max-w-7xl px-8">
+    <section className="bg-neutral-950 py-12 sm:py-16 lg:py-20 text-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold tracking-[-0.02em]">
           How it works
         </h2>

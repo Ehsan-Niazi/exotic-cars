@@ -32,7 +32,12 @@ export default function AuthButton() {
       onMouseEnter={() => setMenuOpen(true)}
       onMouseLeave={() => setMenuOpen(false)}
     >
-      <button className="flex items-center gap-1.5 transition-colors hover:text-red-700">
+      <button
+        type="button"
+        onClick={() => setMenuOpen((open) => !open)}
+        aria-expanded={menuOpen}
+        className="flex items-center gap-1.5 transition-colors hover:text-red-700"
+      >
         <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-semibold text-white">
           {initial}
         </span>
@@ -45,7 +50,7 @@ export default function AuthButton() {
       </button>
 
       {menuOpen && (
-        <div className="absolute right-0 top-full z-50 min-w-56 rounded-md bg-white py-2 shadow-lg">
+        <div className="absolute right-0 top-full z-50 min-w-56 max-w-[calc(100vw-2rem)] rounded-md bg-white py-2 shadow-lg">
           <div className="border-b border-foreground/10 px-4 py-2">
             <p className="text-xs text-foreground/50">Signed in as</p>
             <p className="truncate text-sm font-medium text-foreground">

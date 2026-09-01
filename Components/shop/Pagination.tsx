@@ -24,7 +24,7 @@ export default function Pagination({
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
-    <nav className="mt-10 flex items-center justify-center gap-1.5">
+    <nav className="mt-8 flex flex-wrap items-center justify-center gap-1.5 sm:mt-10">
       <PageLink href={hrefFor(page - 1)} disabled={page === 1}>
         Prev
       </PageLink>

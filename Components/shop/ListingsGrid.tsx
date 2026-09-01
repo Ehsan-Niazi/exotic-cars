@@ -13,7 +13,7 @@ export default function ListingsGrid({
 }) {
   if (!cars.length) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-2xl bg-white py-24 text-center ring-1 ring-foreground/10">
+      <div className="flex flex-col items-center justify-center rounded-2xl bg-white py-16 sm:py-20 lg:py-24 text-center ring-1 ring-foreground/10">
         <SearchX className="h-8 w-8 text-foreground/25" />
         <p className="mt-4 text-sm font-medium text-foreground">
           No cars match those filters

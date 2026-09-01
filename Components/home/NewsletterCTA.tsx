@@ -48,7 +48,7 @@ export default function NewsletterCTA() {
         <div className="absolute -bottom-32 -right-32 h-72 w-72 rounded-full bg-[#006039]/15 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-6 sm:px-8">
+      <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           {/* Small label */}
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#006039]/40 bg-[#006039]/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#8ccfb2]">

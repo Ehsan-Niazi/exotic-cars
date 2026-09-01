@@ -21,12 +21,12 @@ export default function SortDropdown() {
   }
 
   return (
-    <label className="flex items-center gap-2 text-sm">
+    <label className="flex w-full items-center justify-between gap-2 text-sm sm:w-auto sm:justify-start">
       <span className="text-foreground/60">Sort by</span>
       <select
         defaultValue={searchParams.get("sort") ?? "newest"}
         onChange={(e) => handleChange(e.target.value)}
-        className="rounded-lg bg-white px-3 py-1.5 text-sm font-medium text-foreground outline-none ring-1 ring-foreground/15 focus:ring-primary"
+        className="min-w-0 flex-1 rounded-lg bg-white px-3 py-2 sm:flex-none sm:py-1.5 text-sm font-medium text-foreground outline-none ring-1 ring-foreground/15 focus:ring-primary"
       >
         {OPTIONS.map((option) => (
           <option key={option.value} value={option.value}>

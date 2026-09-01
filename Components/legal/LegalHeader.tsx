@@ -9,7 +9,7 @@ export default function LegalHeader({
 }) {
   return (
     <div className="bg-neutral-950 text-white">
-      <div className="mx-auto max-w-3xl px-8 py-14">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-9 sm:py-12 lg:py-14">
         <p className="text-xs text-neutral-400">
           <Link href="/" className="hover:text-white">
             Home

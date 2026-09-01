@@ -14,11 +14,11 @@ export default function SellHero() {
         <div className="absolute inset-0 bg-linear-to-t from-neutral-950 via-neutral-950/20 to-neutral-950/40" />
       </div>
 
-      <div className="relative mx-auto max-w-3xl px-8 py-24 text-center">
+      <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
           Sell With Confidence
         </p>
-        <h1 className="mt-6 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
+        <h1 className="mt-6 text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-5xl">
           List your car in front of serious buyers
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-sm leading-6 text-neutral-300">

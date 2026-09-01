@@ -21,7 +21,7 @@ export default async function ArticlesPage({
     <main className="bg-background">
       <ArticlesHeader />
 
-      <div className="mx-auto max-w-7xl px-8 py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-9 sm:py-12 lg:py-14">
         {!category && featured && (
           <div className="mb-14">
             <FeaturedArticle article={featured} />
@@ -36,7 +36,7 @@ export default async function ArticlesPage({
         </div>
 
         {rest.length === 0 ? (
-          <p className="py-16 text-center text-sm text-foreground/50">
+          <p className="py-10 sm:py-14 lg:py-16 text-center text-sm text-foreground/50">
             No articles in this category yet.
           </p>
         ) : (

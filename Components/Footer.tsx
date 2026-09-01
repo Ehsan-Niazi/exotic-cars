@@ -62,17 +62,17 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="border-t-2 bg-gray-300">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="grid gap-16 py-16 grid-cols-[1fr_2fr] lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 py-12 sm:gap-14 sm:py-16 lg:grid-cols-[1fr_2fr] lg:gap-16 lg:py-20">
           <div className="flex flex-col justify-between">
             <div>
               <Link href="/" className="group inline-block">
                 <div className="flex items-baseline tracking-[-0.04em]">
-                  <span className="text-[23px] font-semibold">EXOTIC</span>
+                  <span className="text-[20px] sm:text-[23px] font-semibold">EXOTIC</span>
 
-                  <span className="ml-2 text-[23px] font-light">CARS</span>
+                  <span className="ml-2 text-[20px] sm:text-[23px] font-light">CARS</span>
 
-                  <span className="ml-2 text-[23px] font-semibold">HUB</span>
+                  <span className="ml-2 text-[20px] sm:text-[23px] font-semibold">HUB</span>
                 </div>
 
                 <div className="mt-1 h-px w-20 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -134,7 +134,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4 sm:gap-x-8 sm:gap-y-12">
             {navigation.map((section) => (
               <div key={section.title}>
                 <h3 className="text-[14px] font-semibold uppercase tracking-[0.18em] text-foreground">

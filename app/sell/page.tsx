@@ -10,7 +10,7 @@ export default function SellPage() {
       <SellSteps />
       <SellPerks />
 
-      <section className="mx-auto max-w-3xl px-8 pb-24">
+      <section className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pb-14 sm:pb-20 lg:pb-24">
         <h2 className="mb-6 text-2xl font-semibold tracking-[-0.02em] text-foreground">
           Tell us about your car
         </h2>

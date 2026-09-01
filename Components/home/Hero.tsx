@@ -17,11 +17,11 @@ export default function Hero() {
         <div className="absolute inset-0 bg-linear-to-l from-neutral-0 via-neutral-900 to-neutral-0" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-8 pt-24 pb-40 text-center">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-32 sm:pt-20 sm:pb-36 lg:pt-24 lg:pb-40 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-red-500">
           Curated. Verified. Exceptional.
         </p>
-        <h1 className="mt-6 text-5xl font-semibold tracking-[-0.03em] sm:text-6xl">
+        <h1 className="mt-6 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl lg:text-6xl">
           Drive something extraordinary
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-sm leading-6 text-neutral-300">
@@ -30,24 +30,24 @@ export default function Hero() {
           exotics.
         </p>
 
-        <div className="mt-9 flex items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:items-center sm:gap-4">
           <Link
             href="/shop"
-            className="rounded-full bg-primary px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
+            className="w-full rounded-full bg-primary px-6 py-3 text-sm sm:w-auto font-medium transition-colors hover:bg-secondary"
           >
             Browse Inventory
           </Link>
           <Link
             href="/sell"
-            className="rounded-full border border-white/25 px-6 py-3 text-sm font-medium transition-colors hover:bg-white/10"
+            className="w-full rounded-full border border-white/25 px-6 py-3 text-sm sm:w-auto font-medium transition-colors hover:bg-white/10"
           >
             Sell Your Car
           </Link>
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-8">
-        <div className="absolute -top-16 left-8 right-8">
+      <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="relative -mt-20 sm:absolute sm:left-6 sm:right-6 sm:-top-16 sm:mt-0 lg:left-8 lg:right-8">
           <SearchWidget />
         </div>
       </div>

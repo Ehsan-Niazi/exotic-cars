@@ -43,7 +43,7 @@ export default function CarCard({
           )}
         </div>
 
-        <div className="p-4">
+        <div className="p-4 sm:p-5">
           <div className="flex items-start justify-between gap-3">
             <h3 className="text-sm font-semibold text-foreground">
               {car.year} {car.manufacturer} {car.model}
@@ -72,7 +72,7 @@ export default function CarCard({
 
       {isMember ? (
         <div className="border-t border-foreground/10 px-4 pb-4 pt-3">
-          <div className="flex items-baseline gap-2">
+          <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
             <span className="text-xs text-foreground/40 line-through">
               ${`${Math.round(car.price * 100).toString()}`}
             </span>
@@ -86,7 +86,7 @@ export default function CarCard({
         </div>
       ) : (
         <div className="border-t border-foreground/10 px-4 pb-4 pt-3">
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-xs font-semibold text-foreground/80">
                 Unlock full pricing

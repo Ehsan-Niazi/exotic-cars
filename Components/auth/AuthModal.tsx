@@ -22,11 +22,11 @@ export default function AuthModal({
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl"
+        className="max-h-[calc(100dvh-2rem)] w-full max-w-md overflow-y-auto rounded-2xl bg-white p-4 shadow-2xl sm:p-6"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
-          <div className="flex gap-6">
+          <div className="flex gap-4 sm:gap-6">
             <button
               onClick={() => setTab("signin")}
               className={`border-b-2 pb-1 text-sm font-semibold transition-colors ${

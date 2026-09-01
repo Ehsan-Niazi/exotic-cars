@@ -23,9 +23,9 @@ export default async function FeaturedListings() {
   ]);
 
   return (
-    <section className="bg-gray-50 py-20">
-      <div className="mx-auto max-w-7xl px-8">
-        <div className="flex items-end justify-between">
+    <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-[-0.02em]">
               Featured listings
@@ -36,7 +36,7 @@ export default async function FeaturedListings() {
           </div>
           <Link
             href="/shop"
-            className="hidden items-center gap-1 text-sm font-medium text-red-700 hover:text-red-800 sm:flex"
+            className="items-center gap-1 self-start sm:self-auto text-sm font-medium text-red-700 hover:text-red-800 sm:flex"
           >
             View all <ArrowRight className="h-4 w-4" />
           </Link>

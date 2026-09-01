@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ShopHeader({ resultCount }: { resultCount: number }) {
   return (
     <div className="bg-neutral-950 text-white">
-      <div className="mx-auto max-w-7xl px-8 py-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-9 sm:py-12 lg:py-14">
         <p className="text-xs text-neutral-400">
           <Link href="/" className="hover:text-white">
             Home
@@ -18,7 +18,7 @@ export default function ShopHeader({ resultCount }: { resultCount: number }) {
           The Full Collection
         </p>
         <div className="mt-2 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
-          <h1 className="text-3xl font-semibold tracking-[-0.02em]">
+          <h1 className="text-2xl font-semibold sm:text-3xl tracking-[-0.02em]">
             Browse inventory
           </h1>
           <p className="text-sm text-neutral-400">

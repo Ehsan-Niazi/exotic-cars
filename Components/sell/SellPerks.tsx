@@ -20,7 +20,7 @@ const PERKS = [
 
 export default function SellPerks() {
   return (
-    <section className="mx-auto max-w-7xl px-8 py-20">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
         {PERKS.map(({ icon: Icon, title, description }) => (
           <div key={title} className="rounded-2xl bg-white p-6 ring-1 ring-foreground/10">
