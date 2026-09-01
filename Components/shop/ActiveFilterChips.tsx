@@ -3,6 +3,7 @@
 import { X } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { toggleInList, setParam } from "@/lib/query";
+import { parsePrice } from "@/lib/filter-cars";
 
 const LIST_KEYS = [
   "manufacturer",
@@ -39,14 +40,20 @@ export default function ActiveFilterChips() {
   }
 
   if (searchParams.get("minPrice") || searchParams.get("maxPrice")) {
-    const min = searchParams.get("minPrice") ?? "0";
-    const max = searchParams.get("maxPrice") ?? "any";
+    // Was Number(rawValue) directly — raw values from the hero search
+    // widget look like "$100,000", and Number() on a string with a $ or a
+    // comma returns NaN. parsePrice() strips non-digits first.
+    const minRaw = searchParams.get("minPrice");
+    const maxRaw = searchParams.get("maxPrice");
+
+    const min = minRaw ? (parsePrice(minRaw) ?? 0) : 0;
+    const max = maxRaw ? parsePrice(maxRaw) : undefined;
 
     chips.push({
       key: "price",
       value: "price",
-      label: `$${Number(min).toString()} – ${
-        max === "any" ? "any" : `$${Number(max).toString()}`
+      label: `$${min.toString()} – ${
+        max === undefined ? "any" : `$${max.toString()}`
       }`,
     });
   }

@@ -47,7 +47,7 @@ export default function SearchWidget() {
   function handleSearch() {
     const params = new URLSearchParams();
 
-    if (make !== makes[0]) params.set("make", make);
+    if (make !== makes[0]) params.set("manufacturer", make);
     if (bodyType !== BODY_TYPES[0]) params.set("bodyType", bodyType);
     if (maxPrice !== PRICE_CAPS[0]) params.set("maxPrice", maxPrice);
 

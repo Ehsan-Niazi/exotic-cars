@@ -19,7 +19,7 @@ function toList(value?: string): string[] {
   return value ? value.split(",").filter(Boolean) : [];
 }
 
-function parsePrice(value?: string): number | undefined {
+export function parsePrice(value?: string): number | undefined {
   if (!value) return undefined;
 
   const digits = value.replace(/[^0-9]/g, "");
