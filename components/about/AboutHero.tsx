@@ -8,7 +8,7 @@ export default function AboutHero() {
     <section className="relative bg-neutral-950 text-white">
       <div className="absolute inset-0">
         <Image
-          src="/about-images/download.webp"
+          src="/about-images/seattle.jpg"
           alt="Seattle skyline with the Space Needle"
           fill
           sizes="(max-width: 1024px) 100vw, 1152px"
