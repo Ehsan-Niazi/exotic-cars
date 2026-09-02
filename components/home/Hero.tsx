@@ -7,12 +7,13 @@ export default function Hero() {
     <section className="relative bg-neutral-950 text-white">
       <div className="absolute inset-0">
         <Image
-          src={"/bgt.jpg"}
+          src="/bgtt.jpg"
           alt="Exotic car on display"
-          fill
-          loading="eager"
+          width={2000}
+          height={1000}
           priority
-          className="object-cover opacity-100"
+          sizes="100vw"
+          className="w-auto h-auto opacity-100"
         />
         <div className="absolute inset-0 bg-linear-to-l from-neutral-0 via-neutral-900 to-neutral-0" />
       </div>
